@@ -45,6 +45,12 @@ $(document).ready(function () {
         'login': 'Username',
       },
     },
+    neo4j: {
+      hidden_fields: ['extra'],
+      relabeling: {
+        'schema': 'Protocol',
+      }
+    },
     qubole: {
       hidden_fields: ['login', 'schema', 'port', 'extra'],
       relabeling: {

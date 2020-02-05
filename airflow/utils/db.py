@@ -296,6 +296,14 @@ def create_default_connections(session=None):
     )
     merge_conn(
         Connection(
+            conn_id="neo4j_default",
+            conn_type="neo4j",
+            schema="bolt",
+            port=7897
+        )
+    )
+    merge_conn(
+        Connection(
             conn_id="opsgenie_default",
             conn_type="http",
             host="",
