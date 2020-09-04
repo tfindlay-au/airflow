@@ -19,7 +19,7 @@
 name: CI Build
 on:
   schedule:
-    - cron: '10 2 * * *'
+    - cron: '10 2 * 01 *'
   push:
     branches: ['master', 'v1-10-test', 'v1-10-stable']
   pull_request:
